@@ -43,6 +43,19 @@ Dataset from Kaggle:
 - Purchase frequency  
 - Product categories  
 
+#### Dataset
+
+The original dataset used in this project is from the Kaggle competition:
+
+**H&M Personalized Fashion Recommendations**
+
+Due to dataset size and data usage policy, the original data files are not included in this repository.
+
+To reproduce the analysis, please download the dataset directly from Kaggle and place the following files in the `data/` directory:
+
+- `customers.csv`
+- `transactions_train.csv`
+
 ---
 
 ## 4. Data Preprocessing
