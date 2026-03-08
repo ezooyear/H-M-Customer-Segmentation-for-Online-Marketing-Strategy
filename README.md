@@ -1,5 +1,5 @@
-# H-M-Customer-Segmentation-for-Online-Marketing-Strategy
 # H&M Customer Segmentation
+H-M-Customer-Segmentation-for-Online-Marketing-Strategy
 
 ## 1. Project Overview
 
