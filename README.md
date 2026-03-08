@@ -126,7 +126,19 @@ The model identified **7 distinct customer segments**.
 
 #### 4. Fashion Enthusiasts
 - High product diversity  
-- Trend-sensitive purchasing behavior  
+- Trend-sensitive purchasing behavior
+
+- ## Cluster Summary
+
+| Cluster | Size | Avg Age | Avg Transactions | Fashion News | Preferred Channel | Member Status | Description |
+|-------|------|---------|-----------------|--------------|------------------|--------------|-------------|
+| 0 | 404031 | 29 | 23 | None | Offline | ACTIVE | Young offline customers |
+| 1 | 284831 | 57 | 22 | Mixed | Mixed | ACTIVE | Older customers |
+| 2 | 347620 | 29 | 29 | Regularly | Mixed | ACTIVE | Target customers |
+| 3 | 207724 | 30 | 22 | None | Online | ACTIVE | Online-oriented customers |
+| 4 | 83276 | 40 | 7 | Mixed | Offline | PRE-CREATE | Potential customers |
+| 5 | 463 | 34 | 18 | None | Mixed | LEFT CLUB | Churn customers |
+| 6 | 834 | 39 | 12 | Monthly | Mixed | ACTIVE / PRE-ACTIVE | Fashion enthusiasts |
 
 ---
 
