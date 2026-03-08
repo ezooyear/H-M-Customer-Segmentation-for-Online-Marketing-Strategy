@@ -1,186 +1,173 @@
 # H-M-Customer-Segmentation-for-Online-Marketing-Strategy
+# H&M Customer Segmentation
 
-1. Project Overview
+## 1. Project Overview
 
-This project aims to perform customer segmentation using large-scale transaction data from H&M and propose data-driven online marketing strategies.
+This project aims to perform **customer segmentation using large-scale transaction data from H&M** and propose **data-driven online marketing strategies**.
 
-With the decline of offline store visits after COVID-19, fashion retailers needed to strengthen their online customer engagement strategies. This project analyzes customer purchasing behavior to identify meaningful customer groups and develop targeted marketing strategies.
+With the decline of offline store visits after COVID-19, fashion retailers needed to strengthen their **online customer engagement strategies**.  
+This project analyzes customer purchasing behavior to identify meaningful customer groups and develop **targeted marketing strategies**.
 
-Dataset: H&M Personalized Fashion Recommendations (Kaggle)
+**Dataset:** H&M Personalized Fashion Recommendations (Kaggle)
 
-2. Business Problem
+---
 
-Due to the COVID-19 pandemic, offline store visits decreased significantly, leading to a decline in overall transactions.
+## 2. Business Problem
+
+Due to the **COVID-19 pandemic**, offline store visits decreased significantly, leading to a decline in overall transactions.
 
 To address this issue, the goal of this project is to:
 
-Segment customers based on purchasing behavior
+- Segment customers based on **purchasing behavior**
+- Identify **high-value and potential customer groups**
+- Propose **targeted online marketing strategies**
 
-Identify high-value and potential customer groups
+---
 
-Propose targeted online marketing strategies
-
-3. Data Description
+## 3. Data Description
 
 Dataset from Kaggle:
 
-H&M Personalized Fashion Recommendations Dataset
+**H&M Personalized Fashion Recommendations Dataset**
 
-Key statistics:
+### Key Statistics
 
-Customers: 1.37 million
+- **Customers:** 1.37 million  
+- **Transactions:** 31.78 million  
+- **Articles:** Fashion product information  
 
-Transactions: 31.78 million
+### Key Variables Used
 
-Articles: Fashion product information
+- Customer demographic information  
+- Transaction history  
+- Purchase frequency  
+- Product categories  
 
-Key variables used:
+---
 
-Customer demographic information
-
-Transaction history
-
-Purchase frequency
-
-Product categories
-
-4. Data Preprocessing
+## 4. Data Preprocessing
 
 The following preprocessing steps were applied:
 
-1️⃣ Customer and transaction datasets were merged
-2️⃣ Customer-level features were generated from transaction history
+### 1. Data Integration
+
+- Customer dataset and transaction dataset were merged.
+
+### 2. Feature Engineering
+
+Customer-level behavioral features were generated from transaction history.
 
 Examples of features:
 
-Purchase frequency
+- **Purchase frequency**
+- **Product category diversity**
+- **Recency of purchase**
+- **Transaction patterns**
 
-Product category diversity
+### 3. Data Transformation
 
-Recency of purchase
+- **One-hot encoding** for categorical variables  
+- **Standard scaling** for numerical variables  
 
-Transaction patterns
+These preprocessing steps enabled effective clustering for **customer segmentation**.
 
-3️⃣ Data transformation
+---
 
-One-hot encoding for categorical variables
-
-Standard scaling for numerical variables
-
-These steps enabled effective clustering for customer segmentation.
-
-5. Customer Segmentation Modeling
+## 5. Customer Segmentation Modeling
 
 Two clustering algorithms were compared:
 
-K-means clustering
+- **K-means Clustering**
+- **Gaussian Mixture Model (GMM)**
 
-Gaussian Mixture Model (GMM)
+### Evaluation Criteria
 
-Evaluation criteria:
+- Cluster separation  
+- Interpretability  
+- Distribution flexibility  
 
-cluster separation
+After comparison, **GMM was selected as the final model** because it better captured **probabilistic cluster structures and overlapping customer behaviors**.
 
-interpretability
+**Optimal number of clusters:** **7**
 
-distribution flexibility
+---
 
-GMM was selected as the final model because it better captured probabilistic cluster structures and overlapping customer behaviors.
+## 6. Results
 
-Optimal number of clusters: 7
+The model identified **7 distinct customer segments**.
 
-6. Results
+### Key Segments
 
-The model identified 7 distinct customer segments.
+#### 1. High-Value Young Customers
+- High purchase frequency  
+- Strong interest in fashion  
+- High engagement with new items  
 
-Key segments include:
+#### 2. Online-Oriented Customers
+- Frequent online purchases  
+- Responsive to digital promotions  
 
-High-Value Young Customers
+#### 3. Potential Customers (Pre-create Group)
+- Low purchase frequency  
+- High potential for engagement  
 
-high purchase frequency
+#### 4. Fashion Enthusiasts
+- High product diversity  
+- Trend-sensitive purchasing behavior  
 
-strong interest in fashion
+---
 
-high engagement with new items
+## 7. Marketing Strategy
 
-Online-Oriented Customers
+Based on customer segments, the following **data-driven marketing strategies** were proposed.
 
-frequent online purchases
+### 1. High-Value Customers
+- Early access to new collections  
+- Loyalty reward programs  
 
-responsive to digital promotions
+### 2. Online-Oriented Customers
+- Personalized product recommendations  
+- Targeted digital promotions  
 
-Potential Customers (Pre-create group)
+### 3. Potential Customers
+- Discount campaigns  
+- Onboarding promotions  
 
-low purchase frequency
+### 4. Fashion Enthusiasts
+- Influencer marketing  
+- Fashion trend newsletters  
 
-high potential for engagement
+These strategies enable **data-driven targeted marketing**.
 
-Fashion Enthusiasts
+---
 
-high product diversity
-
-trend-sensitive purchasing behavior
-
-7. Marketing Strategy
-
-Based on customer segments, the following strategies were proposed:
-
-1. High-value customers
-
-early access to new collections
-
-loyalty reward programs
-
-2. Online-oriented customers
-
-personalized product recommendations
-
-targeted digital promotions
-
-3. Potential customers
-
-discount campaigns
-
-onboarding promotions
-
-4. Fashion enthusiasts
-
-influencer marketing
-
-fashion trend newsletters
-
-These strategies enable data-driven targeted marketing.
-
-8. Limitations
+## 8. Limitations
 
 Several limitations exist in this analysis:
 
-Gender information was not available, limiting demographic analysis
+- **Gender information was not available**, limiting demographic analysis  
+- Due to the **large dataset size**, not all transaction features could be fully utilized  
+- Some advanced behavioral features could not be generated due to **computational constraints**
 
-Due to the large dataset size, not all transaction features could be fully utilized
+---
 
-Some advanced behavioral features could not be generated due to computational constraints
+## 9. My Contribution
 
-9. My Contribution
-
-This project was conducted as a team project.
+This project was conducted as a **team project**.
 
 My responsibilities included:
 
-Implementing K-means clustering for customer segmentation
+- Implementing **K-means clustering for customer segmentation**
+- Participating in **model comparison**
+- Preparing the **presentation materials (PPT)**
+- Writing the **final project report**
 
-Participating in model comparison
+---
 
-Preparing the presentation materials (PPT)
-
-Writing the final project report
-
-10. What I Learned
+## 10. What I Learned
 
 Through this project, I gained experience in:
 
-handling large-scale customer transaction datasets
-
-applying unsupervised learning for customer segmentation
-
-translating analytical results into practical marketing strategies
+- Handling **large-scale customer transaction datasets**
+- Applying **unsupervised learning for customer segmentation**
+- Translating analytical results into **practical marketing strategies**
